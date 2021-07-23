@@ -1,0 +1,122 @@
+// GLOBAL SECTION
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+// FONTS
+
+$Rubik: "Rubik", sans-serif;
+
+// COLOR
+
+$Very-Dark-Gray: hsl(0, 0%, 17%);
+$Dark-Gray: hsl(0, 0%, 59%);
+$Black: #000;
+$White: #fff;
+
+// HEADER SECTION
+
+.container1 {
+  padding: 0 150px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: 38vh;
+  color: $White;
+  background-image: url(../images/pattern-bg.png);
+  background-size: cover;
+
+  p {
+    padding: 20px 0;
+    text-align: center;
+    font-family: $Rubik;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .search-box {
+    display: flex;
+    border: solid 1px transparent;
+    width: 500px;
+    height: 45px;
+    border-radius: 10px;
+
+    input {
+      font-family: $Rubik;
+      border: none;
+      width: 85%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding: 10px 20px;
+    }
+
+    button {
+      border: none;
+      width: 15%;
+      background: $Black;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+// MAIN SECTION
+
+.main {
+    height: 62vh;
+
+  .container {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    // border: 1px solid $Black;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    background-color: $White;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    padding: 20px 0;
+    box-shadow: 0 0 20px rgb(99, 99, 99);
+
+    .heading {
+      font-family: $Rubik;
+      text-transform: uppercase;
+      padding: 20px 20px;
+    }
+
+    .info {
+      width: 25%;
+      font-size: 18px;
+      font-weight: 600;
+      color: $Dark-Gray;
+    }
+
+    .info:not(:last-child) {
+      border-right: 1px solid $Dark-Gray;
+    }
+
+    .data {
+      padding: 0 20px;
+      font-size: 18px;
+      font-family: $Rubik;
+      color: $Black;
+    }
+  }
+
+  .map-container {
+    height: 61.8vh;
+    position: relative;
+    z-index: 1;
+    margin-top: -168px;
+  }
+}

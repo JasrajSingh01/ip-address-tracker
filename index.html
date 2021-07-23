@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="Styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+
+  <!-- API JS FILE -->
+  
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  
+   <!-- MY JS FILE -->
+  
+   <script src="app.js"></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+
+  <div class="header">
+    <div class="container1">
+      <p>IP Address Tracker</p>
+      <div class="search-box">
+        <input id="ip-address" type="text" placeholder="Search for any IP address or domain">
+        <button onclick="resolveIP()" id="search-btn"><img src="images/icon-arrow.svg" alt="locate-ip"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN SECTION -->
+
+  <div class="main">
+    <div class="container">
+      <div class="info">
+        <p class="heading">ip address</p>
+        <p class="data" id="current-ip"></p>
+      </div>
+      <div class="info">
+        <p class="heading">location</p>
+        <p class="data" id="current-town"></p>
+      </div>
+      <div class="info">
+        <p class="heading">timezone</p>
+        <p class="data" id="current-zone"></p>
+      </div>
+      <div class="info">
+        <p class="heading">isp</p>
+        <p class="data" id="current-isp"></p>
+      </div>
+    </div>
+    <div id="mapId" class="map-container"></div>
+  </div>  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
